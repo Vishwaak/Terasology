@@ -1,0 +1,91 @@
+[33mcommit 2f927765324d7d72e81399a44a8fbe3e55ebd797[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Merge: 1ad8b716a 1abb02e4d
+Author: Vishwaak <chandranvishwaak@gmail.com>
+Date:   Wed Jan 23 18:22:44 2019 +0530
+
+    Merge branch 'develop' of https://github.com/Vishwaak/Terasology into develop
+
+[33mcommit 1ad8b716aeac6d13de3daab16806584ad049dff8[m
+Author: Vishwaak <chandranvishwaak@gmail.com>
+Date:   Wed Jan 23 17:44:19 2019 +0530
+
+    Fixed issues
+
+[33mcommit 1abb02e4dce791eac69918d32311b3a83d7e6ff1[m
+Author: T.Vishwaak Chandran <41968785+Vishwaak@users.noreply.github.com>
+Date:   Mon Jan 21 21:08:10 2019 +0530
+
+    Updated Patch
+
+[33mcommit f3742fa6c603e959fefe10f6b3c5efff89313756[m
+Author: Vishwaak <chandranvishwaak@gmail.com>
+Date:   Mon Jan 21 20:11:54 2019 +0530
+
+    UIImage Scaling
+
+[33mcommit bd335348b7bdbe4c2681682832ccb24028394349[m
+Author: Cervator <cervator@gmail.com>
+Date:   Thu Jan 10 23:49:25 2019 -0500
+
+    Add costinvisan to game credits
+
+[33mcommit 23160962f8e556c1e5f52b42326b13d0449d99d3[m
+Author: anexis45 <costin_costin60@yahoo.com>
+Date:   Thu Jan 10 23:45:27 2019 +0200
+
+    SlideImagesPreview
+
+[33mcommit 87b620f198a03352cd1f19ccc0b0155600b64aba[m
+Author: Cervator <cervator@gmail.com>
+Date:   Thu Jan 3 00:29:22 2019 -0500
+
+    Additional fix for #3591 - quick null check
+
+[33mcommit ac948e36d14034a45d7ea96401d367383be767c3[m
+Merge: cd9d3492b 8f5bfbc0f
+Author: Cervator <cervator@gmail.com>
+Date:   Thu Jan 3 00:13:05 2019 -0500
+
+    Merge PR #3592 by @RatMoleRat - UI tweaks
+
+[33mcommit cd9d3492b05c0ce4ac366d6b09d2e90923544d9e[m
+Author: Cervator <cervator@gmail.com>
+Date:   Wed Jan 2 23:55:09 2019 -0500
+
+    Add Snoober to game credits
+
+[33mcommit ef6fbea9d1a461502a217c318c913c8aeb93a77b[m
+Author: Cervator <cervator@gmail.com>
+Date:   Wed Jan 2 23:54:44 2019 -0500
+
+    API restoration after PR #3591 - overload a constructor
+
+[33mcommit 8c59858b31689b5da71711d16d0fadd94e006926[m
+Merge: 1365bac0d 571b63818
+Author: Cervator <cervator@gmail.com>
+Date:   Wed Jan 2 23:09:53 2019 -0500
+
+    Merge PR #3591 by @Snooober - UI improvement
+
+[33mcommit 8f5bfbc0fb67167ad05f53690cc8fcc64e5d60ea[m
+Author: DESKTOP-7QOTR2C\lilyr <lou@rosenbergmail.com>
+Date:   Thu Dec 27 14:13:36 2018 -0500
+
+    Made arrow keys open/close a dropdown (right to open, left to close)
+
+[33mcommit 571b63818516d4704fbcea88feee750d2ab45f59[m
+Merge: be4bacc70 77a6513bd
+Author: Snoober <snoobergh@gmail.com>
+Date:   Thu Dec 27 04:53:36 2018 -0800
+
+    Merge remote-tracking branch 'origin/gameDetailsWorldName' into gameDetailsWorldName
+
+[33mcommit be4bacc70eca3c9e1d231a17e6784445d84d531d[m
+Author: Snoober <snoobergh@gmail.com>
+Date:   Thu Dec 27 04:50:40 2018 -0800
+
+    The game details screen now shows the world name ("Perlin-0"/"Flat-1"/etc.) instead of "main".
+    
+    WorldInfo() objects are created with another String member variable "customTitle" which stores the world name. The "title" variable is preserved as currently the StoragePathProvider system uses "main" as the folder name for the main world.
+    
+    In GameDetailsScreen.setUpGameWorlds(), the gameWorlds UIList uses setItemRenderer() to draw the "customTitle" String variable on the UIList widgets.
